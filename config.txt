@@ -1,0 +1,31 @@
+-- Configuração do Github
+git config --global user.name Pedroantunes19
+git config --global user.email pedroantunes480@gmail.com
+
+-- Preparação do Ambiente para desenvolvimento com Angular
+-- Node, NPM, Angular
+node -v
+npm -v
+ng version
+
+-- Remove as politicas de segurança de execução de scripts do windows
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+-- Instalar o Angular Global
+npm install -g @angular/cli
+ng version
+
+-- Resolução de Problemas de execução
+npm config get prefix
+-- Copiar o caminha que o comando trouxe e adicionar no
+-- Path das variáveis do sistema do windows
+
+-- Criar um projeto angular
+ng new todo-angular --routing=false --style=css --skip-tests --standalone --ssr=false --file-name-style-guide=2025 --defaults
+
+-- Para criar componentes (não pode estar executando o projeto)
+ng generate component componets/todo-form --skip-tests
+ng generate component componets/todo-list --skip-tests
+ng generate component componets/todo-item --skip-tests
+ng generate component componets/todo-list --skip-tests
+ng generate service services/todo-store --skip-tests
