@@ -14,13 +14,14 @@ input {
 
 input:focus {
     border-color: #e11d48;
-    outline: 3px solid #ffe4e4;
+    outline: 3px solid #ffe4e6;
 }
 
 button {
     padding: 0.9rem 1.2rem;
     border: 0;
-    border-radius: #e11d48;
+    border-radius: 0.75rem;
+    background: #e11d48;
     color: #ffffff;
     font: inherit;
     font-weight: 700;
