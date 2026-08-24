@@ -9,7 +9,7 @@
     <app-todo-form (todoAdded)="store.add($event)"></app-todo-form>
 
     <app-todo-list
-    [todo]="store.todos()"
+    [todos]="store.todos()"
     (todoToggled)="store.toggle($event)"
     (todoRemoved)="store.remove($event)"
     />

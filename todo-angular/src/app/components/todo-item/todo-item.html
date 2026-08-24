@@ -6,7 +6,7 @@
         />
         <span>{{ todo().title }}</span>
     </label>
-    <button type="button" [attr.aria-label]="'Excluir a tarefa ' + todo().title" (click)="todoRemoved(todo().id)">
+    <button type="button" [attr.aria-label]="'Excluir a tarefa ' + todo().title" (click)="todoRemoved.emit(todo().id)">
         Excluir
     </button>
 </li>
