@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TodoForm } from './components/todo-form/todo-form';
 import { TodoList } from './components/todo-list/todo-list';
 import { TodoStore } from './services/todo-store';
@@ -7,10 +7,8 @@ import { TodoStore } from './services/todo-store';
   selector: 'app-root',
   imports: [TodoForm, TodoList],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-
 export class App {
   readonly store = inject(TodoStore);
 }
-
